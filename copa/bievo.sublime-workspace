@@ -1,0 +1,732 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"var",
+				"var_dump()"
+			],
+			[
+				"_SE",
+				"$_SESSION"
+			],
+			[
+				"_S",
+				"$_SESSION"
+			],
+			[
+				"session_destr",
+				"session_destroy()"
+			],
+			[
+				"_se",
+				"$_SESSION"
+			],
+			[
+				"json",
+				"json_encode()"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/_Projects/_sbcdados/.htaccess",
+			"settings":
+			{
+				"buffer_size": 1778,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "/C/_Projects/_sbcdados/painel/adm/fazer_pesquisa.php",
+			"settings":
+			{
+				"buffer_size": 20352,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					26,
+					2,
+					"paste",
+					null,
+					"AwAAAKkHAAAAAAAA1AcAAAAAAAAAAAAA1AcAAAAAAADUBwAAAAAAACsAAAAJPGRpdiBjbGFzcz0iZXNjb25kZXIiIGlkPSJsYXRpbml0Ij48L2Rpdj4K1AcAAAAAAAD/BwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqQcAAAAAAADUBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "overlay"
+					},
+					"CAAAAMQHAAAAAAAAxQcAAAAAAAAAAAAAxQcAAAAAAADFBwAAAAAAAAcAAABsYXRpbml0xQcAAAAAAADGBwAAAAAAAAAAAADGBwAAAAAAAMcHAAAAAAAAAAAAAMcHAAAAAAAAyAcAAAAAAAAAAAAAyAcAAAAAAADJBwAAAAAAAAAAAADJBwAAAAAAAMoHAAAAAAAAAAAAAMoHAAAAAAAAywcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAcAAAAAAADLBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"cut",
+					null,
+					"AQAAAMQHAAAAAAAAxAcAAAAAAAAHAAAAb3ZlcmxheQ",
+					"AQAAAAAAAAABAAAAxAcAAAAAAADLBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"paste",
+					null,
+					"AgAAALYHAAAAAAAAvQcAAAAAAAAAAAAAvQcAAAAAAAC9BwAAAAAAAAgAAABlc2NvbmRlcg",
+					"AQAAAAAAAAABAAAAtgcAAAAAAAC+BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					6,
+					"left_delete",
+					null,
+					"BgAAAMMHAAAAAAAAwwcAAAAAAAABAAAAIsIHAAAAAAAAwgcAAAAAAAABAAAAIsEHAAAAAAAAwQcAAAAAAAABAAAAPcAHAAAAAAAAwAcAAAAAAAABAAAAZL8HAAAAAAAAvwcAAAAAAAABAAAAab4HAAAAAAAAvgcAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAxAcAAAAAAADEBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					60,
+					1,
+					"auto_indent_tag",
+					null,
+					"AQAAAL8HAAAAAAAAxAcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwcAAAAAAAC/BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"insert",
+					{
+						"characters": "img"
+					},
+					"AwAAAMIHAAAAAAAAwwcAAAAAAAAAAAAAwwcAAAAAAADEBwAAAAAAAAAAAADEBwAAAAAAAMUHAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgcAAAAAAADCBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMQHAAAAAAAAxAcAAAAAAAABAAAAZw",
+					"AQAAAAAAAAABAAAAxQcAAAAAAADFBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAMQHAAAAAAAAxQcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAcAAAAAAADEBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					3,
+					"left_delete",
+					null,
+					"AwAAAMQHAAAAAAAAxAcAAAAAAAABAAAAZ8MHAAAAAAAAwwcAAAAAAAABAAAAbcIHAAAAAAAAwgcAAAAAAAABAAAAaQ",
+					"AQAAAAAAAAABAAAAxQcAAAAAAADFBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"insert",
+					{
+						"characters": "<img"
+					},
+					"BAAAAMIHAAAAAAAAwwcAAAAAAAAAAAAAwwcAAAAAAADEBwAAAAAAAAAAAADEBwAAAAAAAMUHAAAAAAAAAAAAAMUHAAAAAAAAxgcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgcAAAAAAADCBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"insert_completion",
+					{
+						"completion": "img src=\"$1\">",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "img"
+					},
+					"AgAAAMMHAAAAAAAAwwcAAAAAAAADAAAAaW1nwwcAAAAAAADOBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgcAAAAAAADGBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"paste",
+					null,
+					"AQAAAMwHAAAAAAAA/gcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAcAAAAAAADMBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"insert",
+					{
+						"characters": " /"
+					},
+					"AgAAAP8HAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAABCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/wcAAAAAAAD/BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					95,
+					1,
+					"paste",
+					null,
+					"AgAAAMwHAAAAAAAA9AcAAAAAAAAAAAAA9AcAAAAAAAD0BwAAAAAAADIAAABodHRwczovL3d3dy52YWxvdHRlcnkuY29tL2ltYWdlcy9zcGlubmVyX2dyZWVuLmdpZg",
+					"AQAAAAAAAAABAAAA/gcAAAAAAADMBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					100,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AgAAAAAIAAAAAAAABAgAAAAAAAAAAAAAqgcAAAAAAACvBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqgcAAAAAAAAACAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "Searching 159 files for \"<div class=\"overlay\"\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\backup-15-03-2020_pesquisa_aberta.php:\n   90: \t<div class=\"overlay\">\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\fazer_pesquisa.php:\n   50: \t<div class=\"overlay\"></div>\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\pesquisa_aberta.php:\n   89: \t<div class=\"overlay\">\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\pesquisa_aberta_old.php:\n   89: \t<div class=\"overlay\">\n\n4 matches across 4 files\n\n\nSearching 159 files for \"#cadastrar\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\exec_-min.js:\n    1: jQuery(document).ready(function(e){var a=a||{};e(\"input[type='radio']\").on(\"click\",function(s){let o=e(this).data(\"proxima\"),t=e(this).data(\"indice\"),n=e(this).val();a[t]=n,e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+o+\"']\").removeClass(\"esconder\")}),e(\"#cadastrar\").on(\"click\",function(s){var o={nome_entrevistado:e(\"input[name='nome_entrevistado']\").val(),endereco:e(\"input[name='endereco']\").val(),bairro:e(\"input[name='bairro']\").val(),telefone:e(\"input[name='telefone']\").val(),id_pesquisa:e(\"input[name='id_pesquisa']\").val()};e(o).each(function(s,o){let t=0;if(\"\"==o.nome_entrevistado&&t++,\"\"==o.endereco&&t++,\"\"==o.bairro&&t++,\"\"==o.telefone&&t++,\"\"==o.id_pesquisa&&t++,t>0)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;{a[90]=o.nome_entrevistado,a[91]=o.endereco,a[92]=o.bairro,a[93]=o.telefone,a[94]=o.id_pesquisa,a[95]=\"\",a[96]=\"\",a[97]=\"\",a[98]=\"\";let s=a,t=!0;e.ajax({url:url+\"/painel/adm/ws/cad.php\",type:\"POST\",dataType:\"json\",data:{cadastrar:t,ray:s},success:function(a){if(1==a)return e(\".ant, .cad, .data\").addClass(\"esconder\"),e(\".recomecar, .agradecimentos\").removeClass(\"esconder\"),!0}})}})}),e(\".prox\").on(\"click\",function(a){a.preventDefault();let s=e(this).parents(\"li\"),o=0,t=0;if(s=e(s).find(\"ul.list-inline li label input\"),e(s).each(function(a,s){e(s).is(\":not(:checked)\")&&t++,o++}),t==o)return e(\".erro\").removeClass(\"esconder\").text(\"Selecione uma opção ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;let n=e(this).data(\"proxima\");e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+n+\"']\").removeClass(\"esconder\")}),e(\".prox_entr_1\").on(\"click\",function(a){let s=e(\"#escolhe_estado\").val(),o=e(\"#escolhe_cidade\").val();if(0==s.length||0==o.length)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),!1;e(\".entrevistado_cidade_estado\").addClass(\"esconder\"),e(\".a1\").removeClass(\"esconder\")}),e(\".prox_entrevistado\").on(\"click\",function(a){e(this).removeClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li.entrevistado\").removeClass(\"esconder\")}),e(\".ant\").on(\"click\",function(a){let s=e(this).data(\"anterior\");e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(this).parents(\"li\").hasClass(\"primeira_opt\")?(e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\".entrevistado_cidade_estado\").removeClass(\"esconder\")):null==s||\"\"==s?e(\"ol li[data-atual='a1']\").removeClass(\"esconder\"):e(\"ol li[data-atual='\"+s+\"']\").removeClass(\"esconder\")}),e(\"#escolhe_estado\").on(\"change\",function(){var a=\"\",s=e(\"#escolhe_estado\").val();if(!(s.length>0))return!1;e.ajax({url:url+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{estado:s},success:function(s){a+=e(\"#escolhe_cidade\").html(\"\"),e(s).each(function(e,s){a+=\"<option value=\"+s.codigo_ibge+\">\"+s.nome+\"</option>\"}),e(\"#escolhe_cidade\").append(a).focus()}})}),e(\"#escolhe_cidade\").on(\"change\",function(a){let s=e(\"#escolhe_cidade\").val(),o=e(\"#escolhe_estado\").val(),t=e(\".entrevistado_cidade_estado\").attr(\"data-infopool\");if(e(\".entrevistado_cid_uf\").addClass(\"esconder\"),s.length>0&&o.length>0){if(!(t.length>0))return!1;e.ajax({url:url+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{cidade:s,iestado:o,pesquisa:t},success:function(a){return 1==a?(e(\".entrevistado_cid_uf\").removeClass(\"esconder\"),e(\".first-anterior\").css(\"display\",\"block\"),e(\".sempesquisa\").addClass(\"esconder\"),!0):(e(\".sempesquisa\").removeClass(\"esconder\"),e(\".first-anterior\").css(\"display\",\"none\"),!1)}})}}),e(\"#agradecimentos\").on(\"submit\",function(a){a.preventDefault();var s=e(this).serializeArray();e.ajax({url:url+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{form:s},success:function(a){if(console.log(a),\"00000\"==a)return e(\"#agradecimentos\").addClass(\"esconder\"),!0}})}),e(\"input[name='termo']\").on(\"keyup\",function(a){a.keyCode;let s=e(this).val(),o=e(this).attr(\"data-qperg\"),t=e(this).attr(\"data-qpesq\");if(s.length>=3&&8!=a.keyCode){let a=[];e.ajax({url:url+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{qperg:o,qpesq:t,buscar:s},success:function(s){return e(\"*[data-listperg=\"+o+\"]\").removeClass(\"esconder\"),e(\"*[data-listperg=\"+o+\"]\").each(function(){a.push(e(this).attr(\"data-listresp\"))}),e(a).each(function(a,o){-1===e.inArray(o,s)&&e(\"*[data-listresp=\"+o+\"]\").addClass(\"esconder\")}),!1}})}}),e(\".buttonbuscar\").on(\"click\",function(a){a.preventDefault();let s=e(this).attr(\"data-qperg\");e(\"*[data-listperg=\"+s+\"]\").removeClass(\"esconder\")})});\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\exec_.js:\n   28: \t$(\"#cadastrar\").on('click', function(e)\n   80: \t\t\t\t$(\"#cadastrar\").attr('disabled', 'disabled')\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\exec_.min.js:\n    1: function getBaseUrl(){var e=location.hostname;return\"localhost\"===e?(pathname=window.location.pathname,splitPath=pathname.split(\"/\"),path=splitPath[1],baseUrl=\"https://\"+e+\"/\"+path):baseUrl=\"https://\"+e,baseUrl}jQuery(document).ready(function(e){var a=getBaseUrl(),t=t||{};e(\"input[type='radio']\").on(\"click\",function(a){let s=e(this).data(\"proxima\"),n=e(this).data(\"indice\"),o=e(this).val();t[n]=o,e(\"input[name='termo']\").focus(),e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+s+\"']\").removeClass(\"esconder\")}),e(\"#cadastrar\").on(\"click\",function(s){s.preventDefault();var n=t,o={nome_entrevistado:e(\"input[name='nome_entrevistado']\").val(),endereco:e(\"input[name='endereco']\").val(),bairro:e(\"input[name='bairro']\").val(),telefone:e(\"input[name='telefone']\").val(),id_pesquisa:e(\"input[name='id_pesquisa']\").val(),numero:e(\"input[name='numero']\").val(),latitude:e(\"input[name='latitude']\").val(),longitude:e(\"input[name='longitude']\").val(),distancia:e(\"input[name='distancia']\").val()};return e(o).each(function(s,o){let r=0;if(\"\"==o.nome_entrevistado&&r++,\"\"==o.endereco&&r++,\"\"==o.bairro&&r++,\"\"==o.telefone&&r++,\"\"==o.id_pesquisa&&r++,\"\"==o.numero&&r++,\"\"==o.latitude&&r++,\"\"==o.longitude&&r++,\"\"==o.distancia&&r++,t[90]=o.nome_entrevistado,t[91]=o.endereco,t[92]=o.bairro,t[93]=o.telefone,t[94]=o.id_pesquisa,t[95]=o.numero,t[96]=\"\",t[97]=\"\",t[98]=\"\",t[99]=o.latitude,t[100]=o.longitude,t[101]=o.distancia,r>0)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;e(\"#cadastrar\").attr(\"disabled\",\"disabled\"),e.ajax({url:a+\"/painel/adm/ws/cad.php\",type:\"POST\",dataType:\"json\",data:{cadastrar:!0,ray:n},success:function(a){if(1==a.status){e(\".ant, .cad, .data\").addClass(\"esconder\"),e(\".recomecar, .agradecimentos\").removeClass(\"esconder\");var t=a.frase.replace(\"&amp;\",\"&\");return e(\"#setCompartilhamentoWhatsapp\").attr(\"href\",t),!0}}})}),!1}),e(\".prox\").on(\"click\",function(a){a.preventDefault();let t=e(this).parents(\"li\"),s=0,n=0;if(t=e(t).find(\"ul.list-inline li label input\"),e(t).each(function(a,t){e(t).is(\":not(:checked)\")&&n++,s++}),n==s)return e(\".erro\").removeClass(\"esconder\").text(\"Selecione uma opção ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;let o=e(this).data(\"proxima\");e(\"input[name='termo']\").focus(),e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+o+\"']\").removeClass(\"esconder\")}),e(\".prox_entr_1\").on(\"click\",function(a){let t=e(\"#escolhe_estado\").val(),s=e(\"#escolhe_cidade\").val();if(0==t.length||0==s.length)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),!1;e(\".entrevistado_cidade_estado\").addClass(\"esconder\"),e(\".a1\").removeClass(\"esconder\")}),e(\".prox_entrevistado\").on(\"click\",function(a){e(this).removeClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li.entrevistado\").removeClass(\"esconder\")}),e(\".ant\").on(\"click\",function(a){let t=e(this).data(\"anterior\");e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(this).parents(\"li\").hasClass(\"primeira_opt\")?(e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\".entrevistado_cidade_estado\").removeClass(\"esconder\")):null==t||\"\"==t?e(\"ol li[data-atual='a1']\").removeClass(\"esconder\"):e(\"ol li[data-atual='\"+t+\"']\").removeClass(\"esconder\")}),e(\"#escolhe_estado\").on(\"change\",function(){e(\"#escolhe_cidade\").trigger(\"change\");var t=\"\",s=e(\"#escolhe_estado\").val();if(!(s.length>0))return!1;e.ajax({url:a+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{estado:s},success:function(a){t+=e(\"#escolhe_cidade\").html(\"\"),t+=e(\"#escolhe_cidade\").html(\"<option value='' selected='selected'>Selecione uma cidade ..</option>\"),e(a).each(function(e,a){t+=\"<option value=\"+a.codigo_ibge+\">\"+a.nome+\"</option>\"}),e(\"#escolhe_cidade\").append(t).focus()}})}),e(\"#escolhe_cidade\").on(\"change\",function(t){let s=e(\"#escolhe_cidade\").val(),n=e(\"#escolhe_estado\").val(),o=e(\".entrevistado_cidade_estado\").attr(\"data-infopool\");if(e(\".entrevistado_cid_uf\").addClass(\"esconder\"),s.length>0&&n.length>0){if(!(o.length>0))return!1;e.ajax({url:a+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{cidade:s,iestado:n,pesquisa:o},success:function(a){return 1==a?(e(\".entrevistado_cid_uf\").removeClass(\"esconder\"),e(\".first-anterior\").css(\"display\",\"block\"),e(\".sempesquisa\").addClass(\"esconder\"),!0):(e(\".sempesquisa\").removeClass(\"esconder\"),e(\".first-anterior\").css(\"display\",\"none\"),!1)}})}}),e(\"#agradecimentos\").on(\"submit\",function(t){t.preventDefault();var s=e(this).serializeArray();e.ajax({url:a+\"/painel/adm/ws/cadToEmail.php\",type:\"POST\",dataType:\"json\",data:{form:s},success:function(a){return e(\"#agradecimentos\").addClass(\"esconder\"),!0}})}),e(document).on(\"click\",\"#lastPergunta input[type='radio']\",function(a){var t=e(this).val();null!=t&&\"\"!=t&&(console.log(t),e(\"a[data-proxima='entrevistado']\").removeClass(\"disabled\").removeAttr(\"disabled\"))}),e(\"input[name='termo']\").on(\"keyup\",function(t){t.keyCode;let s=e(this).val(),n=e(this).attr(\"data-qperg\"),o=e(this).attr(\"data-qpesq\");if(s.length>=3&&8!=t.keyCode){let t=[];e.ajax({url:a+\"/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{qperg:n,qpesq:o,buscar:s},success:function(a){return e(\"*[data-listperg=\"+n+\"]\").removeClass(\"esconder\"),e(\"*[data-listperg=\"+n+\"]\").each(function(){t.push(e(this).attr(\"data-listresp\"))}),e(t).each(function(t,s){-1===e.inArray(s,a)&&e(\"*[data-listresp=\"+s+\"]\").addClass(\"esconder\")}),!1}})}}),e(\".buttonbuscar\").on(\"click\",function(a){a.preventDefault();let t=e(this).attr(\"data-qperg\");e(\"*[data-listperg=\"+t+\"]\").removeClass(\"esconder\")}),e(\"input.telefone, input[name='telefone'], input[name='whatsapp']\").mask(\"(99) 9999-9999?9\").focusout(function(a){var t,s,n;s=(t=a.currentTarget?a.currentTarget:a.srcElement).value.replace(/\\D/g,\"\"),(n=e(t)).unmask(),s.length>10?n.mask(\"(99) 99999-999?9\"):n.mask(\"(99) 9999-9999?9\")})});\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\exec_novo.js:\n   74:     $(\"#cadastrar\").on(\"click\", function (s) {\n  116:                 $(\"#cadastrar\").attr(\"disabled\", \"disabled\"),\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\pesquisaminified.js:\n    1: jQuery(document).ready(function(e){var a=a||{};e(\"input[type='radio']\").on(\"click\",function(o){let s=e(this).data(\"proxima\"),n=e(this).val(),t=e(this).data(\"indice\");a[t]=n,e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+s+\"']\").removeClass(\"esconder\")}),e(\"#cadastrar\").on(\"click\",function(o){let s=a;e.ajax({url:\"https://webp101.000webhostapp.com/painel/adm/ws/cad.php\",type:\"POST\",dataType:\"json\",data:{cadastrar:!0,ray:s},success:function(a){if(1==a)return e(\".ant, .cad\").addClass(\"esconder\"),e(\".recomecar\").removeClass(\"esconder\"),!0}})}),e(\".prox\").on(\"click\",function(a){a.preventDefault();let o=e(this).parents(\"li\"),s=0,n=0;if(o=e(o).find(\"ul.list-inline li label input\"),e(o).each(function(a,o){e(o).is(\":not(:checked)\")&&n++,s++}),n==s)return e(\".erro\").removeClass(\"esconder\").text(\"Selecione uma opção ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;let t=e(this).data(\"proxima\");e(\".erro\").addClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li[data-atual='\"+t+\"']\").removeClass(\"esconder\")}),e(\".prox_entr\").on(\"click\",function(o){o.preventDefault();var s={nome_entrevistado:e(\"input[name='nome_entrevistado']\").val(),endereco:e(\"input[name='endereco']\").val(),bairro:e(\"input[name='bairro']\").val(),telefone:e(\"input[name='telefone']\").val(),id_pesquisa:e(\"input[name='id_pesquisa']\").val()};e(s).each(function(o,s){let n=0;if(\"\"==s.nome_entrevistado&&n++,\"\"==s.endereco&&n++,\"\"==s.bairro&&n++,\"\"==s.telefone&&n++,\"\"==s.id_pesquisa&&n++,n>0)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),e(\"body, html\").animate({scrollTop:0},1e3),!1;a[90]=s.nome_entrevistado,a[91]=s.endereco,a[92]=s.bairro,a[93]=s.telefone,a[94]=s.id_pesquisa,a[95]=\"\",a[96]=\"\",a[97]=\"\",a[98]=\"\",e(\".erro\").addClass(\"esconder\"),e(\".entrevistado\").addClass(\"esconder\"),e(\".a1\").removeClass(\"esconder\")})}),e(\".prox_entr_1\").on(\"click\",function(a){let o=e(\"#escolhe_estado\").val(),s=e(\"#escolhe_cidade\").val();if(0==o.length||0==s.length)return e(\".erro\").removeClass(\"esconder\").text(\"Preencha todos os campos ...\"),!1;e(\".entrevistado_cidade_estado\").addClass(\"esconder\"),e(\".a1\").removeClass(\"esconder\")}),e(\".prox_entrevistado\").on(\"click\",function(a){e(this).removeClass(\"esconder\"),e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\"ol li.entrevistado\").removeClass(\"esconder\")}),e(\".ant\").on(\"click\",function(a){a.preventDefault();let o=e(this).data(\"anterior\");e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(this).parents(\"li\").hasClass(\"primeira_opt\")?(e(\"ol > li\").removeClass(\"esconder\").addClass(\"esconder\"),e(\".entrevistado_cidade_estado\").removeClass(\"esconder\")):null==o||\"\"==o?e(\"ol li[data-atual='a1']\").removeClass(\"esconder\"):e(\"ol li[data-atual='\"+o+\"']\").removeClass(\"esconder\")}),e(\"#escolhe_estado\").on(\"change\",function(a){a.preventDefault();var o=\"\",s=e(\"#escolhe_estado\").val();if(!(s.length>0))return!1;e.ajax({url:\"https://webp101.000webhostapp.com/painel/adm/ws/Pesquysa.php\",type:\"POST\",dataType:\"json\",data:{estado:s},success:function(a){o+=e(\"#escolhe_cidade\").html(\"\"),e(a).each(function(e,a){o+=\"<option value=\"+a.codigo_ibge+\">\"+a.nome+\"</option>\"}),e(\"#escolhe_cidade\").append(o)}})})});\n\n8 matches across 5 files\n\n\nSearching 6498 files for \"txt-input-resposta\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\fazer_pesquisa.php:\n  200: \t\t\t\t\t\t\t\t\t\t\tclass=\"form-control txt-input-resposta\"\n  250: \t\t\t\t\t\t\t\t\t\tclass=\"form-control txt-input-resposta\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\pesquisa_aberta.php:\n  242: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"form-control txt-input-resposta\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\pesquisa_aberta_old.php:\n  242: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"form-control txt-input-resposta\"\n\nC:\\_Projects\\_sbcdados\\painel\\adm\\assets\\js\\exec_novo.js:\n  360:         $(this).closest(\".quadrado\").find(\".txt-input-resposta\").val($(this).val());\n\n5 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 15653,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "/C/_Projects/_sbcdados/painel/adm/assets/js/exec_novo.js",
+			"redo_stack":
+			[
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "overlay"
+					},
+					"CAAAANA0AAAAAAAA0DQAAAAAAAABAAAAec80AAAAAAAAzzQAAAAAAAABAAAAYc40AAAAAAAAzjQAAAAAAAABAAAAbM00AAAAAAAAzTQAAAAAAAABAAAAcsw0AAAAAAAAzDQAAAAAAAABAAAAZcs0AAAAAAAAyzQAAAAAAAABAAAAdss0AAAAAAAA0jQAAAAAAAAAAAAAyjQAAAAAAADKNAAAAAAAAAEAAABv",
+					"AQAAAAAAAAABAAAA0TQAAAAAAADRNAAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 18962,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKkzAAAAAAAAqTMAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAqjMAAAAAAACqMwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/_Projects/_sbcdados",
+		"/C/_Projects/_sbcdados/painel",
+		"/C/_Projects/_sbcdados/painel/adm"
+	],
+	"file_history":
+	[
+		"/C/_Projects/_sbcdados/painel/adm/pesquisa_aberta.php",
+		"/C/_Projects/_sbcdados/painel/adm/pesquisadores_abertas.php",
+		"/C/_Projects/_sbcdados/painel/adm/revisao.php.old.php",
+		"/C/_Projects/_sbcdados/painel/adm/usuarios.php",
+		"/C/_Projects/_sbcdados/painel/adm/revisao.php",
+		"/C/_Projects/_sbcdados/painel/adm/result-data.php",
+		"/C/_Projects/_sbcdados/painel/adm/respostas.php",
+		"/C/_Projects/_sbcdados/painel/adm/resposta_grupo_resposta.php",
+		"/C/_Projects/_sbcdados/painel/adm/perguntas.php",
+		"/C/_Projects/_sbcdados/painel/adm/grupo_resposta.php",
+		"/C/_Projects/_sbcdados/painel/adm/grava_revisao.php",
+		"/C/_Projects/_sbcdados/painel/adm/categorias.php",
+		"/C/_Projects/_sbcdados/painel/adm/bloquear_cliente.php",
+		"/C/_Projects/_sbcdados/painel/adm/menu.php",
+		"/C/_Projects/_sbcdados/painel/adm/login_pesquisadora.php",
+		"/C/_Projects/_sbcdados/poolToPDF.php",
+		"/C/_Projects/_sbcdados/painel/adm/assets/js/exec_.js",
+		"/C/_Projects/_sbcdados/painel/adm/pesquisa_aberta_old.php",
+		"/C/_Projects/_sbcdados/painel/adm/ws/cad_.php",
+		"/C/_Projects/_sbcdados/painel/adm/fazer_pesquisa.php",
+		"/C/_Projects/_sbcdados/painel/adm/ws/cad.php",
+		"/C/_Projects/_sbcdados/painel/adm/assets/js/exec_novo.js",
+		"/C/_Projects/_sbcdados/painel/adm/assets/css/psquisa2.css",
+		"/C/_Projects/_sbcdados/pesquisa.php",
+		"/C/_Projects/_sbcdados/.htaccess",
+		"/C/_Projects/_sbcdados/painel/adm/ws/usuario.php",
+		"/C/_Projects/_sbcdados/painel/index.php",
+		"/C/_Projects/_sbcdados/painel/adm/gerenciar.php",
+		"/C/_Projects/_sbcdados/painel/adm/logar.php",
+		"/C/_Projects/_sbcdados/sftp-config.json",
+		"/C/_Projects/_bievo/bievo/app/Http/Controllers/UserController.php",
+		"/C/_Projects/_bievo/bievo/sftp-config.json",
+		"/C/_Projects/_bievo/bievo/app/Http/Controllers/ContentController.php",
+		"/C/_Projects/_bievo/bievo/app/Http/Controllers/HomeController.php",
+		"/C/_Projects/_bievo/bievo/resources/views/layouts/sidebar.blade.php",
+		"/C/_Projects/_bievo/bievo/.env",
+		"/C/_Projects/_bievo/bievo/public/.htaccess",
+		"/C/_Projects/_bievo/bievo/.gitignore",
+		"/C/_Projects/_bievo/bievo/.htaccess",
+		"/C/_Projects/_bievo/bievo/.env.development",
+		"/C/_Projects/_bievo/bievo/resources/views/auth/login.blade.php",
+		"/C/_Projects/bievo/php-mvc-br/index.php",
+		"/C/_Projects/bievo/php-mvc-br/controllers/login.php",
+		"/C/_Projects/bievo/php-mvc-br/.htaccess",
+		"/C/_Projects/bievo/php-mvc-br/config.php",
+		"/C/_Projects/bievo/index.php",
+		"/C/_Projects/bievo/.htaccess",
+		"/C/_Projects/bievo/sftp-config.json",
+		"/C/_Projects/_Miner/hagnos/sftp-config.json",
+		"/C/Users/phpde/Desktop/execute.bat",
+		"/C/_Projects/_sbcdados/painel/adm/ws/Pesquysa.php",
+		"/C/_Projects/_sbcdados/css/gerenciar.css",
+		"/C/_Projects/_sbcdados/painel/adm/assets/css/toggle_button.css",
+		"/C/_Projects/_sbcdados/SBC-Dados-Eraldo/painel/adm/usuarios.php",
+		"/C/_Projects/_sbcdados/config.php"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"C:\\_Projects\\_sbcdados,<project filters>",
+			"C:\\_Projects\\_sbcdados\\painel,<project filters>",
+			"C:\\_Projects\\_sbcdados,<project filters>",
+			"C:\\_Projects\\_sbcdados\\painel,<project filters>",
+			"C:\\_Projects\\_sbcdados,<project filters>",
+			"C:\\_Projects\\_sbcdados\\painel,<project filters>",
+			"C:\\_Projects\\_sbcdados,<project filters>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"txt-input-resposta",
+			"#cadastrar",
+			"'#cadastrar'",
+			"<div class=\"overlay\"",
+			"Dados aterados com sucesso",
+			" != '0')",
+			"Cod. Digitação",
+			"apg=usuarios",
+			"handleStatusGeo",
+			"$_POST[\"geo\"]",
+			"$_POST['geo']",
+			"handleStatusStatus",
+			"handleStatusGeo",
+			"Desativar GEO",
+			"MEU VOTO IMPRESSO",
+			"Preencha todos os campos ...",
+			"voto impresso",
+			"data_ini",
+			"if($geolocalizacao == 0) {",
+			"painel/adm/ws/cad.php",
+			"prox_entr_cadastrar",
+			"#cadastrar",
+			"Escolha outra pesquisa",
+			"title-pergunta",
+			"#psquisa",
+			"title-pergunta",
+			"psquisa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/_Projects/_sbcdados/.htaccess",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1417,
+								1439
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/_Projects/_sbcdados/painel/adm/fazer_pesquisa.php",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1967,
+								2053
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 566.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15653,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										129,
+										149
+									],
+									[
+										214,
+										234
+									],
+									[
+										306,
+										326
+									],
+									[
+										396,
+										416
+									],
+									[
+										872,
+										882
+									],
+									[
+										5284,
+										5294
+									],
+									[
+										5335,
+										5345
+									],
+									[
+										6025,
+										6035
+									],
+									[
+										7055,
+										7065
+									],
+									[
+										11544,
+										11554
+									],
+									[
+										11610,
+										11620
+									],
+									[
+										12049,
+										12059
+									],
+									[
+										15159,
+										15177
+									],
+									[
+										15216,
+										15234
+									],
+									[
+										15334,
+										15352
+									],
+									[
+										15456,
+										15474
+									],
+									[
+										15586,
+										15604
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								15592,
+								15592
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2934.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/_Projects/_sbcdados/painel/adm/assets/js/exec_novo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13514,
+								13521
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 215.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bievo.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
