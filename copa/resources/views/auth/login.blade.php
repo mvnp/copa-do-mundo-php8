@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>EVO BRINDES | Entrar</title>
+		<title>COPA DOS 30 | Entrar</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 		<link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome-free/css/all.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
@@ -12,7 +12,7 @@
 	<body class="hold-transition login-page">
 		<div class="login-box">
 			<div class="login-logo">
-				<a href="https://evobrindes.com.br/bievo"><b>EVO</b> BRINDES</a>
+				<a href="javascript:void(0)"><b>COPA</b> DOS 30</a>
 			</div>
 			<div class="card">
 				<div class="card-body login-card-body">
