@@ -1,0 +1,16 @@
+.hold-transition{
+    background-image: url("../img/banner-copa.jpg") !important; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+
+}
+
+.login-card-body, .register-card-body {
+    background-color: rgb(201, 200, 200);
+    border-top: 0;
+    color: #666;
+    padding: 20px;
+    border-radius: 0.5rem;
+}

@@ -2,7 +2,7 @@
 	<!-- Brand Logo -->
 	<a href="JAVASCRIPT:VOID(0)" class="brand-link">
 	    <img src="{{ asset('assets/dist/img/AdminLTELogo.png') }}" alt="COPA DOS 30" class="brand-image img-circle elevation-3" style="opacity: .8">
-	    <span class="brand-text font-weight-light">AdminLTE 3</span>
+	    <span class="brand-text font-weight-light">COPA DOS 30</span>
 	</a>
 	<!-- Sidebar -->
 	<div class="sidebar">
