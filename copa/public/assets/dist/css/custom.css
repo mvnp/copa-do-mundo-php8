@@ -2,10 +2,10 @@
 .mg-r-40 { margin-right: 8px }
 .mg-l-40 { margin-left: 8px }
 .grupo {
-    background: #a2e9a2;
-    border-radius: 5px;
-    border: 1px solid #b5b5b5;
     padding: 10px;
+    border-radius: 10px;
+    background: #a2e9a2;
+    border: 1px solid #b5b5b5;
     background: url("../../img/c1-cup.jpg");
     background-size: 100% auto;
 }
