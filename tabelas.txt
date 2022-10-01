@@ -1,0 +1,35 @@
+	
+	confrontos
+		id
+		etapa_id
+		grupo_id			[nullable]
+		casa (id selecao 1) 		[nullable]
+		visitante (id selecao 2)	[nullable]
+		data_confronto
+		created_at
+		updated_at
+
+	confrontos_palpites
+		id
+		user_id
+		confronto_id
+		casa (gols)	
+		visitante (gols)
+		created_at
+		updated_at
+
+	confrontos_resultados
+		id
+		confronto_id
+		casa (gols)	
+		visitante (gols)
+		created_at
+		updated_at      Palpite 3x1 Resultado 2x1 [3]
+				[1] - Acerta 1 palpite de gol
+				[2] - Acerta 2 palpites de gol
+				[3] - Acerta o resultado da partida
+				[4] - Acerta o resultado da partida + 1 palpite de gol
+				[5] - Acerta o resultado da partida + 2 palpites de gol
+	confronto_id
+	[1] confrontos_palpites->casa = confrontos_resultados->casa
+	[1] confrontos_palpites->visitante = confrontos_resultados->visitante

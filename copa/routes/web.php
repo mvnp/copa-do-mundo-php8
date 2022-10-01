@@ -31,4 +31,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/users/update/{user}', 'UserController@update')->name('users.update');
 
     Route::get('/content', 'ContentController@index')->name('content.index');
+
+    Route::get('/confrontos', 'ConfrontoController@index')->name('confrontos.index');
 });

@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Confronto extends Model
 {
     use HasFactory;
+
+    public function selecaoCasa() {
+        return $this->belongsTo(Selecao::class, "casa", "id");
+    }
+
+    public function selecaoVisitante() {
+        return $this->belongsTo(Selecao::class, "visitante", "id");
+    }
 }
