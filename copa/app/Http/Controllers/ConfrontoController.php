@@ -15,7 +15,7 @@ class ConfrontoController extends Controller
      */
     public function index()
     {
-        $obj['page'] = "Fase de Grupos";
+        $obj['page'] = "";
         // $obj['upd'] = ((isset($user) ? $user : []));
         // $obj['profiles'] = Profile::orderBy('name', 'asc')->get();
         // $obj['users'] = User::with('profile')->orderBy('first_name', 'asc')->get();
@@ -33,14 +33,51 @@ class ConfrontoController extends Controller
         $obj['grupo_g'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 7, 'etapa_id' => 1])->get();
         $obj['grupo_h'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 8, 'etapa_id' => 1])->get();
 
+        $obj['oitavas'] = Confronto::with('classificado_casa.selecao', 'classificado_visitante.selecao')->where(['etapa_id' => 2])->get()->toArray();
+
+        // echo "<pre>"; print_r($obj['oitavas']);
+        // exit;
+
+        // $obj['grupo_1a_2b'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 1])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 2])->get(),
+        // ];
+        // $obj['grupo_1c_2d'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 3])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 4])->get(),
+        // ];
+        // $obj['grupo_1e_2f'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 5])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 6])->get(),
+        // ];
+        // $obj['grupo_1g_2h'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 7])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 8])->get(),
+        // ];
+        // $obj['grupo_1b_2a'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 2])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 1])->get(),
+        // ];
+        // $obj['grupo_1d_2c'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 4])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 3])->get(),
+        // ];
+        // $obj['grupo_1f_2e'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 6])->get(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 5])->get(),
+        // ];
+        // $obj['grupo_1h_2g'] = [
+        //     "selecaoCasa" => Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 8])->get()->toArray(),
+        //     "selecaoVisitante" => Confronto::with('selecaoVisitante')->where(['grupo_id' => 7])->get()->toArray(),
+        // ];
+
         // $obj['oitavas'] = Confronto::where('grupo_id', 2)->get();
         // $obj['quartas'] = Confronto::where('grupo_id', 3)->get();
         // $obj['semi'] = Confronto::where('grupo_id', 4)->get();
         // $obj['terceiro'] = Confronto::where('grupo_id', 5)->get();
         // $obj['campeao'] = Confronto::where('grupo_id', 6)->get();
 
-        // echo "<pre>";
-        // print_r($obj['grupo_a']);
+        // echo "<pre>"; print_r($obj['oitavas']); exit;
 
         return View::make('confrontos.index')->with('obj', $obj);
     }

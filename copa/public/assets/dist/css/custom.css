@@ -16,4 +16,14 @@
     font-weight: 600;
     /* text-shadow: 1px 1px #fff; */
 }
+.selecao a {
+    color: #fff;
+}
+.getResultado select,
+.getResultado select:hover,
+.getResultado select:active,
+.getResultado select:focus {
+    background: transparent;
+    border: 0;
+}
 #football > div.col-12:nth-child(1) div.row { margin-top: 0!important }

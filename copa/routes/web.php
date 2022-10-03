@@ -33,4 +33,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/content', 'ContentController@index')->name('content.index');
 
     Route::get('/confrontos', 'ConfrontoController@index')->name('confrontos.index');
+
+    // Vai cadastrar ou atualizar o palpite dos jogadores.
+    Route::get('/confrontos-palpites', 'ConfrontoController@store')->name('confrontos.store');
+    Route::post('/confrontos-palpites', 'ConfrontoController@store')->name('confrontos.store');
+    Route::put('/confrontos-palpites', 'ConfrontoController@store')->name('confrontos.store');
+    Route::delete('/confrontos-palpites', 'ConfrontoController@store')->name('confrontos.store');
 });

@@ -21,9 +21,11 @@
             @include('layouts.footer')
             @include('layouts.aside')
         </div>
+        <script>localStorage.setItem('user', {{ \Auth::user()->id }});</script>
         <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('assets/dist/js/adminlte.min.js') }}"></script>
         <script src="{{ asset('assets/dist/js/demo.js') }}"></script>
+        <script src="{{ asset('assets/dist/js/score.js') }}"></script>
     </body>
 </html>

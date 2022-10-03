@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Vai cadastrar ou atualizar o palpite dos jogadores.
+Route::get('/confrontos-palpites', 'ConfrontoPalpiteController@store')->name('palpites.store');
+Route::post('/confrontos-palpites', 'ConfrontoPalpiteController@store')->name('palpites.store');
+Route::put('/confrontos-palpites', 'ConfrontoPalpiteController@store')->name('palpites.store');
+Route::delete('/confrontos-palpites', 'ConfrontoPalpiteController@store')->name('palpites.store');

@@ -1,7 +1,10 @@
 @extends('layouts.app')
 @section('content')
+    <style>.content-header {height: 0px!important;padding: 0!important}</style>
     <section class="content">
         <div class="container-fluid">
+            <h1 class="text-center py-3">Fase de Grupos</h1>
+
             <div class="row mb-3">
                 <div class="col-12 col-md-4" style="overflow: hidden">
                     <h3>Grupo A</h3>
@@ -224,6 +227,72 @@
                             </div>
                             @endforeach
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-center py-3">Oitavas de Final</h1>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="row">
+                        @foreach ($obj['oitavas'] as $match)
+                            <div class="oitavas-data-infos col-12 col-md-6 mb-3">
+                                <div class="grupo">
+                                    <div id="football" class="row">
+                                        <div class="col-12">
+                                            <div class="getResultado row mt-3" id="{{$match["id"]}}">
+                                                <div class="col-5 text-left pt-1">
+                                                    <div class="row">
+                                                        <div class="pt-1 col-1">
+                                                            <span class="selecao">
+                                                                <a href="javascript:void(0)">1{{$match['classificado_casa']['chave']}}</a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <img class="pt-1 img-40 mg-l-40 w-100" src="{{ asset('assets/img/bandeiras/fifa.png') }}" alt="" />
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <select name="select-casa" id="{{'casa-'.$match['id']}}" class="selecao casa form-control">
+                                                                <option value="">Selecione ...</option>
+                                                                @foreach ($match['classificado_casa']['selecao'] as $casa)
+                                                                    <option value="{{$casa['id']}}" data-confronto="{{$match['id']}}">{{$casa['selecao']}}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 text-center px-0 pt-1">
+                                                    <input name="input-resultado-confronto-casa" type="text" class="text-center form-control" />
+                                                </div>
+                                                <div class="col-1 text-center px-0 pt-1">
+                                                    <input name="input-resultado-confronto-visitante" type="text" class="text-center form-control" />
+                                                </div>
+                                                <div class="col-5 text-left pt-1">
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            <select name="select-visitante" id="{{'visitante-'.$match['id']}}" class="selecao visitante form-control">
+                                                                <option value="">Selecione ...</option>
+                                                                @foreach ($match['classificado_visitante']['selecao'] as $casa)
+                                                                    <option value="{{$casa['id']}}" data-confronto="{{$match['id']}}">{{$casa['selecao']}}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-2 px-0">
+                                                            <img class="pt-1 img-40 mg-r-40 w-100" src="{{ asset('assets/img/bandeiras/fifa.png') }}" alt="" />
+                                                        </div>
+                                                        <div class="pt-1 px-0 col-1">
+                                                            <span class="selecao">
+                                                                <a href="javascript:void(0)">2{{$match['classificado_visitante']['chave']}}</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

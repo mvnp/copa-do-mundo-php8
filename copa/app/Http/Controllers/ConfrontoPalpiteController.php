@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\ConfrontoPalpite;
 use Illuminate\Http\Request;
 
+use Exception;
+
 class ConfrontoPalpiteController extends Controller
 {
     /**
@@ -35,7 +37,12 @@ class ConfrontoPalpiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $palpite = $request->all();
+            ConfrontoPalpite::create($palpite);
+        } catch (Exception $e) {
+            return response()->json(['error' => "Não foi possível cadastrar o palpite."], 401);
+        } return response()->json(['data' => "O palpite foi cadastrado com sucesso."], 200);
     }
 
     /**

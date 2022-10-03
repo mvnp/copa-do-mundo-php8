@@ -19,10 +19,8 @@ class Grupo extends Model
         'deleted_at'
     ];
 
-    public function selacao()
+    public function selecao()
     {
         return $this->hasMany(Selecao::class);
     }
-
-    
 }

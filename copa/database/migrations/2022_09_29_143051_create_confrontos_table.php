@@ -22,6 +22,8 @@ return new class extends Migration
             $table->foreignId('grupo_id')->nullable()->constrained();
             $table->foreignId('casa')->nullable()->references('id')->on('selecaos')->constrained();
             $table->foreignId('visitante')->nullable()->references('id')->on('selecaos')->constrained();
+            $table->foreignId('classificado_casa')->nullable()->references('id')->on('selecaos')->constrained();
+            $table->foreignId('classificado_visitante')->nullable()->references('id')->on('selecaos')->constrained();
             $table->dateTime('data_confronto');
             $table->timestamps();
             $table->softDeletes();
@@ -35,8 +37,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('confrontos');
-        //DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+        // DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+        // DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 };
