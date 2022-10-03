@@ -28,8 +28,6 @@ CREATE TABLE `confronto_palpites` (
   `confronto_id` bigint unsigned NOT NULL,
   `casa` bigint unsigned NOT NULL,
   `visitante` bigint unsigned NOT NULL,
-  `golscasa` int DEFAULT NULL,
-  `golsvisitante` int DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
