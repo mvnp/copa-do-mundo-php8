@@ -13,14 +13,15 @@
                 </div>
                 @foreach ($obj['dump1'] as $index => $a)
                     @if($index == 4)
-                        <div class="col-12 col-md-4 d-flex mt-5" style="align-items: center; justify-content: center">
-                            <img class="w-100" src="https://i.pinimg.com/originals/ec/82/a5/ec82a51e2d701406118f5d010b7fa0ab.png" alt="World Cup 2022" />
+                        <div class="col-12 col-md-4" style="overflow: hidden">
+                            asdfsadfasdfasdf
                         </div>
                     @endif
                     <div class="col-12 col-md-4" style="overflow: hidden">
-                        <h3 class="mt-4">Grupo {{$alphabet[$index]}}</h3>
+                        <h3>Grupo {{$alphabet[$index]}}</h3>
                         <div class="grupo">
                             <div id="football" class="row">
+
                                 @foreach ($a['confronto'] as $versus)
                                     {{-- <pre> {{ print_r($versus) }} {{  exit() }} --}}
                                     <div class="col-12">
@@ -42,6 +43,7 @@
                                         </div>
                                     </div>
                                 @endforeach
+
                             </div>
                         </div>
                     </div>
@@ -51,9 +53,6 @@
             <!-- ###################################################################################################### -->
             <!-- ###################################################################################################### -->
 
-            <!-- ###################################################################################################### -->
-            <!-- ############################ OITAVAS DE FINAL ######################################################## -->
-            <!-- ###################################################################################################### -->
             <h1 class="text-center py-3">Oitavas de Final</h1>
             <div class="row mb-3">
                 <div class="col-12">

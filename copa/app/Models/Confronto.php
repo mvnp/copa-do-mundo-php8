@@ -40,4 +40,8 @@ class Confronto extends Model
     public function classificado_visitante() {
         return $this->belongsTo(Grupo::class, "classificado_visitante", "id");
     }
+
+    public function gols() {
+        return $this->hasOne(ConfrontoResultado::class, "confronto_id", "id");
+    }
 }

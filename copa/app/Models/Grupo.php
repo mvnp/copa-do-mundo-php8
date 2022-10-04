@@ -23,4 +23,9 @@ class Grupo extends Model
     {
         return $this->hasMany(Selecao::class);
     }
+
+    public function confronto()
+    {
+        return $this->hasMany(Confronto::class)->where("etapa_id", 1);
+    }
 }

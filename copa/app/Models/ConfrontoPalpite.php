@@ -17,4 +17,12 @@ class ConfrontoPalpite extends Model
     protected $fillable = [
 
     ];
+
+    public function confronto() {
+        return $this->belongsTo(Confronto::class, "confronto_id");
+    }
+
+    public function gols() {
+        return $this->hasOne(ConfrontoPalpite::class, "confronto_id");
+    }
 }

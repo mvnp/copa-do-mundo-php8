@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Confronto;
+use App\Models\ConfrontoPalpite;
+use App\Models\Grupo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,6 +17,16 @@ class ConfrontoController extends Controller
      */
     public function index()
     {
+        // $confronto1 = Confronto::with("casa", "visitante")->find(1)->toArray();
+
+        // echo "<pre>"; print_r($confronto1);
+
+        // echo "<h1>A selecao ".$confronto1['casa']['selecao']." fez ".$confronto1['gols']['casa']."</h1>";
+
+        // exit;
+
+
+
         $obj['page'] = "";
         // $obj['upd'] = ((isset($user) ? $user : []));
         // $obj['profiles'] = Profile::orderBy('name', 'asc')->get();
@@ -24,14 +36,23 @@ class ConfrontoController extends Controller
             'Lista' => action('\App\Http\Controllers\ConfrontoController@index', ['index'])
         ];
 
-        $obj['grupo_a'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 1, 'etapa_id' => 1])->get();
-        $obj['grupo_b'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 2, 'etapa_id' => 1])->get();
-        $obj['grupo_c'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 3, 'etapa_id' => 1])->get();
-        $obj['grupo_d'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 4, 'etapa_id' => 1])->get();
-        $obj['grupo_e'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 5, 'etapa_id' => 1])->get();
-        $obj['grupo_f'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 6, 'etapa_id' => 1])->get();
-        $obj['grupo_g'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 7, 'etapa_id' => 1])->get();
-        $obj['grupo_h'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 8, 'etapa_id' => 1])->get();
+        $dump = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['etapa_id' => 1])->orderBy('grupo_id', 'asc')->get()->toArray();
+        $obj['fase'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['etapa_id' => 1])->orderBy('grupo_id', 'asc')->groupBy('grupo_id')->get();
+
+
+        $obj['dump1'] = Grupo::with('confronto.selecaoCasa', 'confronto.selecaoVisitante')->get()->toArray();
+
+        // $obj['grupo_b'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 2, 'etapa_id' => 1])->get();
+        // $obj['grupo_c'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 3, 'etapa_id' => 1])->get();
+        // $obj['grupo_d'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 4, 'etapa_id' => 1])->get();
+        // $obj['grupo_e'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 5, 'etapa_id' => 1])->get();
+        // $obj['grupo_f'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 6, 'etapa_id' => 1])->get();
+        // $obj['grupo_g'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 7, 'etapa_id' => 1])->get();
+        // $obj['grupo_h'] = Confronto::with('selecaoCasa', 'selecaoVisitante')->where(['grupo_id' => 8, 'etapa_id' => 1])->get();
+
+        // echo "<pre>";
+        // print_r($obj['dump1']);
+        // exit;
 
         $obj['oitavas'] = Confronto::with('classificado_casa.selecao', 'classificado_visitante.selecao')->where(['etapa_id' => 2])->get()->toArray();
 
