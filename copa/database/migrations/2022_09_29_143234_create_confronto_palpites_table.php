@@ -23,8 +23,6 @@ return new class extends Migration
             $table->foreignId('confronto_id')->constrained();
             $table->foreignId('casa')->references('id')->on('selecaos')->constrained();
             $table->foreignId('visitante')->references('id')->on('selecaos')->constrained();
-            $table->integer('golscasa')->nullable();
-            $table->integer('golsvisitante')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -37,8 +35,8 @@ return new class extends Migration
      */
     public function down()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+        //DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('confronto_palpites');
-        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+        //DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 };

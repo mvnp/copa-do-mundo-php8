@@ -15,7 +15,11 @@ class ConfrontoPalpite extends Model
     protected $table = 'confronto_palpites';
 
     protected $fillable = [
-
+        "user_id",
+        "confronto_id",
+        "casa",
+        "visitante",
+        'deleted_at',
     ];
 
     public function confronto() {
