@@ -28,6 +28,7 @@
                                             <div class="col-5 text-left">
                                                 <img class="img-40 mg-r-40" src="{{ asset('assets/img/bandeiras/'.$versus['selecao_casa']['id'].'.png') }}" alt="" />
                                                 <span class="selecao">{{$versus['selecao_casa']['selecao']}}</span>
+                                                <span class="selecao">{{$versus['selecao_casa']['selecao']}}</span>
                                             </div>
                                             <div class="col-1 text-center px-0">
                                                 <input type="text" class="text-center form-control" data-confronto="{{$versus['selecao_casa']['id']}}" />
