@@ -37,11 +37,20 @@ class ConfrontoPalpiteController extends Controller
      */
     public function store(Request $request)
     {
+        $user_id = $request->user_id;
+        $confronto_id = $request->confronto_id;
+        $palpite = ConfrontoPalpite::where(['user_id' => $user_id, 'confronto_id' => $confronto_id]);
+
         try {
-            $palpite = $request->all();
-            ConfrontoPalpite::create($palpite);
+            $objPalpite = $request->all();
+            if(isset($palpite->first()->id)):
+                $objPalpiteDB = ConfrontoPalpite::find($palpite->first()->id);
+                $objPalpiteDB->update($objPalpite);
+            else:
+                ConfrontoPalpite::create($objPalpite);
+            endif;
         } catch (Exception $e) {
-            return response()->json(['error' => "Não foi possível cadastrar o palpite."], 401);
+            return response()->json(['error' => $e->getMessage()], 401);
         } return response()->json(['data' => "O palpite foi cadastrado com sucesso."], 200);
     }
 
@@ -52,17 +61,6 @@ class ConfrontoPalpiteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(ConfrontoPalpite $confrontoPalpite)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\ConfrontoPalpite  $confrontoPalpite
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ConfrontoPalpite $confrontoPalpite)
     {
         //
     }

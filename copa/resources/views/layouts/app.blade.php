@@ -3,6 +3,9 @@
     @include('layouts.head')
     <body class="hold-transition sidebar-mini sidebar-collapse">
         <div class="wrapper">
+            <div class="overlay">
+                <img src="{{ asset('assets/dist/img/loader.gif') }}" alt="" />
+            </div>
             <!-- Navbar -->
             @include('layouts.nav')
             <!-- Sidebar -->

@@ -23,22 +23,35 @@
                             <div id="football" class="row">
                                 @foreach ($a['confronto'] as $versus)
                                     {{-- <pre> {{ print_r($versus) }} {{  exit() }} --}}
-                                    <div class="col-12">
+                                    <div data-id="{{$versus['id']}}" id="confronto-{{$versus['id']}}" class="getPalpite col-12">
                                         <div class="row mt-3">
                                             <div class="col-5 text-left">
-                                                <img class="img-40 mg-r-40" src="{{ asset('assets/img/bandeiras/'.$versus['selecao_casa']['id'].'.png') }}" alt="" />
-                                                <span class="selecao">{{$versus['selecao_casa']['selecao']}}</span>
-                                                <span class="selecao">{{$versus['selecao_casa']['selecao']}}</span>
+                                                <div class="row">
+                                                    <div class="col-5 col-md-3 pr-0">
+                                                        <img class="img-40" style="float: rigth" src="{{ asset('assets/img/bandeiras/'.$versus['selecao_casa']['id'].'.png') }}" alt="" />
+                                                    </div>
+                                                    <div class="col-7 col-md-9">
+                                                        <span class="selecao d-none d-sm-block">{{$versus['selecao_casa']['selecao']}}</span>
+                                                        <span class="selecao d-sm-none d-block">{{$versus['selecao_casa']['sigla']}}</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-1 text-center px-0">
-                                                <input type="text" class="text-center form-control" data-confronto="{{$versus['selecao_casa']['id']}}" />
+                                                <input type="text" name="palpite-casa" class="text-center form-control px-0" data-casa="{{$versus['selecao_casa']['id']}}" data-confronto="{{$versus['selecao_casa']['id']}}" />
                                             </div>
                                             <div class="col-1 text-center px-0">
-                                                <input type="text" class="text-center form-control" data-confronto="{{$versus['selecao_visitante']['id']}}" />
+                                                <input type="text" name="palpite-visitante" class="text-center form-control px-0" data-visitante="{{$versus['selecao_visitante']['id']}}" data-confronto="{{$versus['selecao_visitante']['id']}}" />
                                             </div>
                                             <div class="col-5 text-right">
-                                                <span class="selecao">{{$versus['selecao_visitante']['selecao']}}</span>
-                                                <img class="img-40 mg-l-40" src="{{ asset('assets/img/bandeiras/'.$versus['selecao_visitante']['id'].'.png') }}" alt="" />
+                                                <div class="row">
+                                                    <div class="col-7 col-md-9">
+                                                        <span class="selecao d-none d-sm-block">{{$versus['selecao_visitante']['selecao']}}</span>
+                                                        <span class="selecao d-sm-none d-block">{{$versus['selecao_visitante']['sigla']}}</span>
+                                                    </div>
+                                                    <div class="col-5 col-md-3 pl-0">
+                                                        <img class="img-40" style="float: rigth" src="{{ asset('assets/img/bandeiras/'.$versus['selecao_visitante']['id'].'.png') }}" alt="" />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -48,9 +61,6 @@
                     </div>
                 @endforeach
             </div>
-            <!-- ###################################################################################################### -->
-            <!-- ###################################################################################################### -->
-            <!-- ###################################################################################################### -->
 
             <!-- ###################################################################################################### -->
             <!-- ############################ OITAVAS DE FINAL ######################################################## -->
