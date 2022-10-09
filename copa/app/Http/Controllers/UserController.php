@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -14,13 +15,19 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
-    public function register(Request $request)
+    public function register(RegisterRequest $request)
     {
+        $photo = $request->file('photo');
+        if($request->hasFile('photo')) {
+            $photo = $request->file('photo')->store('users', 'public');
+        }
+
         try {
             $user = new User;
             $user->first_name = $request->first_name;
             $user->last_name = $request->last_name;
             $user->email = $request->email;
+            $user->photo = $photo ?? 'users/copa.png' ;
             $user->status = $request->status;
             $user->profile_id = $request->profile_id;
             $user->password = bcrypt($request->password);
@@ -28,21 +35,34 @@ class UserController extends Controller
             $userCreated = $user->save();
         }
         catch (Exception $e) {
-            return redirect()->to('users')->with('error', 'Não foi possível criar o usuário!');
-        } return redirect()->to('users')->with('success', 'O usuário foi criado com sucesso!');
+            //return redirect()->to('users')->with('error', 'Não foi possível criar o usuário!');
+            return back()->with('error','Não foi possível cadastrar o usuário.');
+        } //return redirect()->to('users')->with('success', 'O usuário foi criado com sucesso!');
+        return back()->with('success','Usuário cadastrado com sucesso!');
     }
 
-    public function update(User $user, Request $request)
+    public function update(User $user, RegisterRequest $request)
     {
+        $data = array_filter($request->all());
+        //dd($request);
+        //exit;
+
+        $photo = $request->file('photo');
+        if($request->hasFile('photo')) {
+            $photo = $request->file('photo')->store('users', 'public');
+            $data['photo'] = $photo;
+        }
+
         try {
-            $data = array_filter($request->all());
             if(isset($data['password'])):
                 $data['password'] = bcrypt($data['password']);
             endif;
             $user->update($data);
         } catch (Exception $e) {
-            return redirect()->to('users')->with('error', 'Não foi possível atualizar o usuário!');
-        } return redirect()->to('users')->with('success', 'O usuário foi atualizado com sucesso!');
+            //return redirect()->to('users')->with('error', 'Não foi possível atualizar o usuário!');
+            return back()->with('error','Não foi possível atualizar o usuário.');
+        } //return redirect()->to('users')->with('success', 'O usuário foi atualizado com sucesso!');
+        return back()->with('success','Usuário atualizado com sucesso!');
     }
 
     public function destroy(User $user)

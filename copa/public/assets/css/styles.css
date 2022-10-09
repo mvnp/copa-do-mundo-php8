@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana;
-    color: #333;
-    
+    font-family: Verdana;   
 }
 
 body {
@@ -154,4 +152,12 @@ input, select {
     color: #fff;
     text-decoration: line-through;
     font-style: italic  ;
+}
+
+.msg {
+    color: #fff !important;
+}
+
+.asid {
+    color: #ddd !important;
 }

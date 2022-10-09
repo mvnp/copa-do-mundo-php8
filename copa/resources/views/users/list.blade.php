@@ -9,21 +9,39 @@
                         <div class="card-header">
                             <h3 class="card-title">Novo usuário</h3>
                         </div>
-                        <form id="quickFormUser" action="{{ url('users/register') }}" method="POST" enctype="application/x-www-form-urlencoded">
+                        <form id="quickFormUser" action="{{ url('users/register') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="first_name">Nome</label>
-                                    <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Insira nome ..." required />
+                                    <input type="text" id="first_name" name="first_name" class="form-control @error('first_name') is-invalid @enderror" placeholder="Insira nome ..." value="{{old('first_name')}}" required />
+                                    @error('first_name')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}
+                                        </div>
+                                    @enderror
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="last_name">Sobrenome</label>
-                                    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Insira sobrenome ..." required />
+                                    <input type="text" id="last_name" name="last_name" class="form-control @error('last_name') is-invalid @enderror" placeholder="Insira sobrenome ..." value="{{old('last_name')}}" required />
+                                    @error('last_name')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}
+                                        </div>
+                                    @enderror
                                 </div>
+
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Endereço de e-mail</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Insira e-mail ..." required />
+                                    <input type="email" id="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Insira e-mail ..." value="{{old('email')}}" required />
+                                    @error('email')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}  
+                                        </div>
+                                    @enderror
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="Profiles">Perfil</label>
                                     <select name="profile_id" id="profile_id" class="form-control">
@@ -32,10 +50,22 @@
                                         @endforeach
                                     </select>
                                 </div>
+
+                                <div class="form-group">
+                                    <label>Foto</label>
+                                    <input type="file" name="photo" id="photo" class="form-control">
+                                </div>
+
                                 <div class="form-group">
                                     <label for="password">Senha</label>
-                                    <input type="password" id="password" name="password" class="form-control" placeholder="Insira uma senha ..." required />
+                                    <input type="password" id="password" name="password" class="form-control @error('email') is-invalid @enderror" placeholder="Insira uma senha ..." required />
+                                    @error('password')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}  
+                                        </div>
+                                    @enderror
                                 </div>
+
                             </div>
                             <div class="card-footer">
                                 <input type="hidden" name="status" value="1" required />
@@ -53,15 +83,30 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="first_name">Nome</label>
-                                    <input value="{{ $obj['upd']->first_name }}" type="text" id="first_name" name="first_name" class="form-control" placeholder="Insira nome ..." required />
+                                    <input value="{{ $obj['upd']->first_name }}" type="text" id="first_name" name="first_name" class="form-control @error('first_name') is-invalid @enderror" placeholder="Insira nome ..." required />
+                                    <!-- @error('first_name')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}
+                                        </div>
+                                    @enderror -->
                                 </div>
                                 <div class="form-group">
                                     <label for="last_name">Sobrenome</label>
-                                    <input value="{{ $obj['upd']->last_name }}" type="text" id="last_name" name="last_name" class="form-control" placeholder="Insira sobrenome ..." required />
+                                    <input value="{{ $obj['upd']->last_name }}" type="text" id="last_name" name="last_name" class="form-control @error('last_name') is-invalid @enderror" placeholder="Insira sobrenome ..." required />
+                                    <!-- @error('last_name')
+                                        <div class="invalid-feedback alerta">
+                                            {{$message}}
+                                        </div>
+                                    @enderror -->
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Endereço de e-mail</label>
                                     <input value="{{ $obj['upd']->email }}" type="email" id="email" name="email" class="form-control" placeholder="Insira e-mail ..." required />
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="photo">Foto</label>
+                                    <input value="{{ $obj['upd']->photo }}" type="file"name="photo" id="photo" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Senha</label>

@@ -16,6 +16,9 @@
                 @include('layouts.breadcrumb')
                 <!-- Main content -->
                 <section class="content">
+                    <div class="msg">
+                        @include('layouts.flash-message')  
+                    </div>
                     @yield('content')
                 </div>
                 <!-- /.content -->
