@@ -161,3 +161,24 @@ input, select {
 .asid {
     color: #ddd !important;
 }
+
+.botao {
+    display: flex;
+}
+
+.voltar {
+    align-items: left;
+    left:-9px;
+    color: #fff;
+}
+
+
+.voltar a {
+    color: #fff;
+}
+
+
+.atualizar {
+    align-items: right;
+    right:-33px;
+}

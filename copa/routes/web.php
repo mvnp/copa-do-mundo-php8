@@ -28,7 +28,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/users/destroy/{user}', 'UserController@destroy')->name('users.destroy');
     Route::get('/users/status/{user}', 'UserController@status')->name('users.status');
     Route::get('/users/edit/{user}', 'HomeController@users')->name('users.edit');
-    Route::post('/users/update/{user}', 'UserController@update')->name('users.update');
+
+    Route::put('/users/update/{user}', 'UserController@update')->name('users.update');
 
     Route::get('/content', 'ContentController@index')->name('content.index');
 

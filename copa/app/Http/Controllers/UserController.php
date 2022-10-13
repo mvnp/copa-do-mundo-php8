@@ -43,9 +43,7 @@ class UserController extends Controller
 
     public function update(User $user, RegisterRequest $request)
     {
-        $data = array_filter($request->all());
-        //dd($request);
-        //exit;
+        $data = $request->all();
 
         $photo = $request->file('photo');
         if($request->hasFile('photo')) {

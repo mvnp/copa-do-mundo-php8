@@ -2,43 +2,74 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Models\User;
+use Illuminate\Validation\Rule;
 
-class RegisterRequest extends FormRequest
+class RegisterRequest extends BaseFormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return true;
-    }
-
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules()
+    public function store()
     {
         return [
-            'first_name'=> 'required|alpha',
-            'last_name' => 'required|alpha',
+            'first_name'=> 'required|regex:/^[\pL\s\-]+$/u',
+            'last_name' => 'required|regex:/^[\pL\s\-]+$/u',
             'email'     => 'required|max:100|email|unique:users',
+            'password'  => 'required|min:5',
             'status'    => 'required',
-            'password'  => 'required'
         ];
     }
 
+    /**
+     * Get the validation rules that apply to the put/patch request.
+     *
+     * @return array
+     */
+    public function update()
+    {
+        $data = $this->request->all();
+        $user = User::where("email", $data['email'])->first();
+        
+        return [
+            'first_name'=> 'required|regex:/^[\pL\s\-]+$/u',
+            'last_name' => 'required|regex:/^[\pL\s\-]+$/u',
+            //'email' => 'unique:users,email_address,$user->id,id,account_id,1'
+            //'email' => 'required|max:100|email|unique:users,email,'.$user->id,
+            'email' => 'required|max:100|email|exists:users,email'
+        ];
+    }
+
+    /**
+     * Get the validation rules that apply to the delete request.
+     *
+     * @return array
+     */
+    public function destroy()
+    {
+        return [
+            'id' => 'required|integer|exists:users,id'
+        ];
+    }
+
+    /**
+     * Custom message for validation
+     *
+     * @return array
+     */
     public function messages()
     {
-    	return [
+        return [
     		'required' => 'Este campo é obrigatório',
+            'first_name.required' => 'O campo Nome é obrigatório!',
+            'last_name.required' => 'O campo Sobrenome é obrigatório!',
             'email.unique' => 'Existe um cadastro com esse email',
+            'email.exists' => 'Existe um cadastro com esse email',
 			'min' => 'Campo deve ter no mínimo :min caracteres',
-            'alpha' => 'Preencher esse campo somente com letras.'
+            'password.required' => 'O campo senha é obrigatório!',
+            'alpha' => 'Preencher esse campo somente com letras.',
 	    ];
     }
 }

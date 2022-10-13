@@ -33,5 +33,6 @@
         <script src="{{ asset('assets/dist/js/adminlte.min.js') }}"></script>
         <script src="{{ asset('assets/dist/js/demo.js') }}"></script>
         <script src="{{ asset('assets/dist/js/score.js') }}"></script>
+        <script src="{{ asset('assets/js/scripts.js') }}"></script>
     </body>
 </html>
